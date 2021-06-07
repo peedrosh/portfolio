@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FormEvent } from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { SiReact, SiRedux, SiNodeDotJs } from 'react-icons/si'
 import Navbar from '../components/Navbar'
@@ -6,6 +6,10 @@ import Navbar from '../components/Navbar'
 const projects = [1, 2, 3]
 
 export default function Home() {
+  function handleSubmit(event: FormEvent) {
+    event.preventDefault()
+  }
+
   return (
     <div>
       <Navbar />
@@ -118,7 +122,7 @@ export default function Home() {
       <section className="contact">
         <h2>Entre em contato</h2>
 
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="input-row">
             <div className="input-group">
               <label htmlFor="name">Nome</label>

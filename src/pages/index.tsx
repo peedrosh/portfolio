@@ -22,15 +22,23 @@ export default function Home() {
           </p>
 
           <div>
-            <a href="/">
+            <a
+              href="https://github.com/peedrosh"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaGithub />
             </a>
-            <a href="/">
+            <a
+              href="https://www.linkedin.com/in/peedrosh/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaLinkedin />
             </a>
           </div>
 
-          <a href="/">Projetos</a>
+          <a href="#">Projetos</a>
         </div>
         <div>
           <img src="/header.jpg" />
@@ -100,7 +108,7 @@ export default function Home() {
                   sint ea explicabo possimus, eos.
                 </p>
 
-                <a href="/">Mais detalhes</a>
+                <a href="#">Mais detalhes</a>
               </div>
             </div>
           ))}

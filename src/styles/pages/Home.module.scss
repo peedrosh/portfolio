@@ -1,0 +1,16 @@
+.technologies {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  text-align: center;
+  padding: 8rem 2.4rem;
+
+  svg {
+    color: var(--dark-600);
+    font-size: 6.4rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 8rem;
+    }
+  }
+}
